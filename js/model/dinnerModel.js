@@ -9,12 +9,15 @@ var DinnerModel = function() {
 
 	this.setNumberOfGuests = function(num) {
 		//TODO Lab 2
+		if (num > 0){
+			numberOfGuests = num;
+		}
 	}
 
 	// should return 
 	this.getNumberOfGuests = function() {
 		//TODO Lab 2
-
+		return numberOfGuests;
 
 	}
 
