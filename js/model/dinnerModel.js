@@ -20,10 +20,10 @@ var DinnerModel = function() {
 
 	//Returns the dish that is on the menu for selected type, must be the type for that exact chosen menu = 1 dish
 	this.getSelectedDish = function(type) {
-		// For each type in dish object see id the dish type is the same as type
+		// For each dish object see se if the type matches the provided type.
 		for(key in selectedMenu){
 			if(dishes[key].type == type) {
-				return dishes[type];
+				return dishes[type]; 
 			}
 		}
 	}
@@ -31,11 +31,19 @@ var DinnerModel = function() {
 	//Returns all the dishes on the menu.
 	this.getFullMenu = function() {
 		//TODO Lab 2
+		return selectedMenu;
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
-		//TODO Lab 2
+		//for each course in the menu select all ingredients
+		//for each ingredient look at the name and quantity
+		//return name and quantity times number of guests var numberOfGuests;
+		for(key in selectedMenu){
+			for(ingredients in dished[key].ingredients){
+				return ingredients;
+			}
+		}		
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
