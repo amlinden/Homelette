@@ -58,11 +58,27 @@ var DinnerModel = function() {
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
 		//TODO Lab 2 
+		//get the full dish
+		var dish = getDish(id);
+		//check if there already is a dish of the same type, remove if so
+		for (key in selectedMenu){
+			if (selectedMenu[key].type == dish.type){
+				removeDishFromMenu(selectedMenu[key].id);
+			}
+		//add new dish
+		selectedMenu.push(dish);
+		}
 	}
 
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {
 		//TODO Lab 2
+		for (key in selectedMenu){
+			if (selectedMenu[key].id == id){
+				selectedMenu.splice(key, 1);
+				break;
+			}
+		}
 	}
 
 	//function that returns all dishes of specific type (i.e. "starter", "main dish" or "dessert")
