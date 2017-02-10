@@ -25,8 +25,8 @@ var DinnerModel = function() {
 	this.getSelectedDish = function(type) {
 		// For each dish object see se if the type matches the provided type.
 		for(key in selectedMenu){
-			if(dishes[key].type == type) {
-				return dishes[type]; 
+			if(selectedMenu[key].type == type) {
+				return selectedMenu[type]; 
 			}
 		}
 	}
@@ -43,7 +43,7 @@ var DinnerModel = function() {
 		//for each ingredient look at the name and quantity
 		//return name and quantity times number of guests var numberOfGuests;
 		for(key in selectedMenu){
-			for(ingredients in dished[key].ingredients){
+			for(ingredients in selectedMenu[key].ingredients){
 				return ingredients;
 			}
 		}		
