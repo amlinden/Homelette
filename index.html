@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<style>
+  .dish {
+    max-width:170px;
+  }
+</style>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -75,7 +82,7 @@
                 </ul>
             </div>
         </div>
-        <div id="main-wrapper" class="col-md-10 pull-right">
+        <!-- <div id="main-wrapper" class="col-md-10 pull-right">
             <div id="main">
               <div class="page-header">
                 <h3>Admin</h3>
@@ -87,11 +94,38 @@
            
             </div>
          
-        </div>
+        </div> -->
 </div>
-			
-			
-	
+
+	<div class="container col-md-offset-2" id="SelectDishScreen">
+    <div style="background-color:gray">
+      <h1>Select Dish</h1>
+      <form class="form-inline">
+        <input class="form-control" id="dishSearch" placeholder="Enter key words here">
+        <button class="btn btn-default">Search</button>
+        <select class="form-control col-md-offset-1">
+          <option>Starter</option>
+        <option>Main Dish</option>
+        <option>Dessert</option>
+      </select>
+    </form>
+    </div>
+    <div class="dish">
+      <img src="images\toast.jpg" style="">
+      <button class="btn btn-default">Toast</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="dish">
+      <img src="images\meatballs.jpg" style="">
+      <button class="btn btn-default">Meatballs</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="dish">
+      <img src="images\icecream.jpg" style="">
+      <button class="btn btn-default">Ice Cream</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    </div>
+  </div>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -103,5 +137,12 @@
 	<script src="js/model/dinnerModel.js"></script>
 	<script src="js/view/exampleView.js"></script>
 	<script src="js/view/exampleViewController.js"></script>
+  <script src="js/view/HomeScreen.js"></script>
+  <script src="js/view/LeftNavBar.js"></script>
+  <script src="js/view/SelectDishScreen.js"></script>
+  <script src="js/view/DishDetailsScreen.js"></script>
+  <script src="js/view/DinnerOverviewScreen.js"></script>
+  <script src="js/view/InstructionsScreen.js"></script>
+
   </body>
 </html>
