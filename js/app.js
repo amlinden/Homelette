@@ -9,7 +9,7 @@ $(function() {
 	//var HomeScreen = new HomeScreen($("#HomeScreen"));
 	var leftNavBar = new LeftNavBar($("#LeftNavBar"), model);
 	var selectDishScreen = new SelectDishScreen($("#SelectDishScreen"));
-	//var dishDetailsScreen = new DishDetailsScreen($("#DishDetailsScreen"));
+	var dishDetailsScreen = new DishDetailsScreen($("#DishDetailsScreen"));
 	//var dinnerOverviewScreen = new DinnerOverviewScreen($("#DinnerOverviewScreen"));
 	//var preparationScreen = new PreparationScreen($("#PreparationScreen"));
 

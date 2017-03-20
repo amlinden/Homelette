@@ -9,7 +9,7 @@ var SelectDishScreen = function (container, model) {
 
 	//search word keywords
 	var searchValue= this.searchvalue = container.find("#searchvalue");
-	//displayed dishes with search word
+	//displayed dishes (with search word from above)
 	var dishesShow = this.dishesshow = container.find("#dishesview");
 	
 }
