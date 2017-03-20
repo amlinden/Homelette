@@ -11,10 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" />
-
-
   </head>
-  <body>
+<body>
 
 <div class="row">
     <div class="col-sm-12">
@@ -25,27 +23,36 @@
 </div>
 
 <div id="LeftNavBar"> 
-	<div class="col-md-12">
-	<div class="row">
-		<div class="col-md-12"> 
-	    <h1>My Dinner</h1><br> 
-	    </div> 
-	</div>
-	</div>
 	
-	   	<div class="row">
-	      	<div class="col-md-12">   
-		      <div class="col-md-8">
-		        <p>People</p>
-		        <div id="numberOfGuests"><input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10"></div>
-		        <br>
-		      </div>
-		      <div class="col-md-4">
-		      		<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-		            <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>   
-		      </div>
-    		</div>
-		</div>
+  <div class="col-md-12">
+  	<div class="row">
+  		<div class="col-md-12"> 
+  	    <h1>My Dinner</h1><br> 
+  	  </div> 
+  	</div>
+  </div>
+  <div class="col-md-12"> 
+   	<div class="row">
+    	<div class="col-md-12">   
+        <div class="col-md-8">
+          <p>People</p>
+          <div id="numberOfGuests">2</div>
+          <br>
+        </div>
+      <div class="col-md-4">  
+      	<div class="row">
+          <div class="col-md-12">
+      		  <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+  		    </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button> 
+          </div>  
+        </div>
+      </div>
+      </div>
+    </div>
 
     <div class="row">
         <div class="col-md-12">   
@@ -54,7 +61,7 @@
         		<div id="dishname"></p></div>
         	</div>
 
-        	 <div class="col-sm-4 ">    
+        	 <div class="col-md-4">    
         		<p>Cost</p><span id="cost"></span><span id="totalMenuPrice"></span></p>
         		<br>
 	    	</div>
@@ -62,50 +69,20 @@
 	</div>
 
 	<div class="row">
-        <div class="col-md-12"> 
-        	<div class="col-md-8">
- 	        <button id="createDinner" class="btn btn-default" value="Confirm dinner">Confirm Dinner</button>
- 	        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- 	        </div>
-	    </div>
+    <div class="col-md-12"> 
+      <div class="col-md-8">
+ 	      <button id="createDinner" class="btn btn-default" value="Confirm dinner">Confirm Dinner</button>
+ 	      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 	    </div>
+	  </div>
 	</div>
 	      
   	 
-    </div>
-
+  </div>
 </div>
 
-  <div id="SelectDishScreen">
-      <div id="vitruta">
-        <h2>Select Dish</h2>
-        <!-- search for -->
-        <div class="input-group">
-          <input id="searchvalue" type="text" class="form-control" placeholder="Enter key words">
-          <span class="input-group-btn">
-            <button id="search" class="btn btn-default" type="button">Search</button>
-          </span>
 
-
-          <!-- main dessert starter -->
-          <div class="col-xs-5">
-            <select id="coursebutton" class="form-control">
-              <option data-type="starter" selected>Starter</option>
-              <option data-type="main dish" selected>Main</option>
-              <option data-type="dessert" selected>Dessert</option>
-            </select>
-          </div>
-        </div>
-       </div>
-
-      <div id=' + dishes[k].id + '>
-      <img style="width:150px;height:150px;" src="images/toast.jpg">
-      <br><button id="toast" class="btn btn-default" type="button">Toast</button>
-      <br>Ipsum tjoho
-      </div>
-  </div>
-
-<!--
-	<div class="container col-md-offset-2" id="SelectDishScreen">
+<div class="container col-md-offset-2" id="SelectDishScreen">
     <div>
       <h1>Select Dish</h1>
       <form class="form-inline">
@@ -119,22 +96,22 @@
     </form>
     </div>
     <div class="dish">
-      <img src="images\toast.jpg">
+      <img src="images\toast.jpg" style="">
       <button class="btn btn-default">Toast</button>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <div class="dish">
-      <img src="images\meatballs.jpg">
+      <img src="images\meatballs.jpg" style="">
       <button class="btn btn-default">Meatballs</button>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="dish">
-      <img src="images\icecream.jpg">
+      <img src="images\icecream.jpg" style="">
       <button class="btn btn-default">Ice Cream</button>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     </div>
   </div>
--->
+
   	</div>
 </div>
 			
