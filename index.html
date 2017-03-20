@@ -11,10 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" />
-
-
   </head>
-  <body>
+<body>
 
 <div class="row">
     <div class="col-sm-12">
@@ -25,27 +23,38 @@
 </div>
 
 <div id="LeftNavBar"> 
-	<div class="col-md-12">
-	<div class="row">
-		<div class="col-md-12"> 
-	    <h1>My Dinner</h1><br> 
-	    </div> 
-	</div>
-	</div>
 	
-	   	<div class="row">
-	      	<div class="col-md-12">   
-		      <div class="col-md-8">
-		        <p>People</p>
-		        <div id="numberOfGuests"><input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10"></div>
-		        <br>
-		      </div>
-		      <div class="col-md-4">
-		      		<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-		            <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>   
-		      </div>
-    		</div>
-		</div>
+  <div class="col-md-12">
+  	<div class="row">
+  		<div class="col-md-12"> 
+  	    <h1>My Dinner</h1><br> 
+  	  </div> 
+  	</div>
+  </div>
+
+  <div class="col-md-12"> 
+  
+   	<div class="row">
+    	<div class="col-md-12">   
+        <div class="col-md-8">
+          <p>People</p>
+          <div id="numberOfGuests">2</div>
+          <br>
+        </div>
+        <div class="col-md-4">  
+        	<div class="row">
+            <div class="col-md-12">
+        		  <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+    		    </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button> 
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
         <div class="col-md-12">   
@@ -54,7 +63,7 @@
         		<div id="dishname"></p></div>
         	</div>
 
-        	 <div class="col-sm-4 ">    
+        	 <div class="col-md-4">    
         		<p>Cost</p><span id="cost"></span><span id="totalMenuPrice"></span></p>
         		<br>
 	    	</div>
@@ -62,21 +71,20 @@
 	</div>
 
 	<div class="row">
-        <div class="col-md-12"> 
-        	<div class="col-md-8">
- 	        <button id="createDinner" class="btn btn-default" value="Confirm dinner">Confirm Dinner</button>
- 	        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- 	        </div>
-	    </div>
+    <div class="col-md-12"> 
+      <div class="col-md-8">
+ 	      <button id="createDinner" class="btn btn-default" value="Confirm dinner">Confirm Dinner</button>
+ 	      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 	    </div>
+	  </div>
 	</div>
 	      
   	 
-    </div>
-
+  </div>
 </div>
 
 
-	<div class="container col-md-offset-2" id="SelectDishScreen">
+<div class="container col-md-offset-2" id="SelectDishScreen">
     <div>
       <h1>Select Dish</h1>
       <form class="form-inline">
