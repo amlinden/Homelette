@@ -1,6 +1,19 @@
 //DinnerModel Object constructor
 var DinnerModel = function() {
  
+	
+ 	this._listener = [];
+ 		// add new observer to array
+ 	this.addObserver = function(listener){
+		this._listener.push(listener);
+ 	}
+ 		//calls the updated methos on all the observers in the array. updates
+ 	this.notifyObserver = function(args){
+ 		for (var i =0; i < this._listener.length; i++){
+ 			this._listener[i].update(args);
+ 		}
+	};
+
 	//TODO Lab 2 implement the data structure that will hold number of guest
 	// and selected dinner options for dinner menu
 	var selectedMenu = [];
@@ -12,6 +25,7 @@ var DinnerModel = function() {
 		if (num > 0){
 			numberOfGuests = num;
 		}
+		this.notifyObserver(); 
 	}
 
 	// should return 
@@ -74,6 +88,7 @@ var DinnerModel = function() {
 		//add new dish
 		selectedMenu.push(dish);
 		}
+		this.notifyObserver(); 
 	}
 
 	//Removes dish from menu
@@ -85,6 +100,7 @@ var DinnerModel = function() {
 				break;
 			}
 		}
+		this.notifyObserver(); 
 	}
 
 	//function that returns all dishes of specific type (i.e. "starter", "main dish" or "dessert")
