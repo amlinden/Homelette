@@ -18,7 +18,7 @@ var DinnerModel = function() {
 	this.getNumberOfGuests = function() {
 		//TODO Lab 2
 		return numberOfGuests;
-
+		
 	}
 
 	//Returns the dish that is on the menu for selected type, must be the type for that exact chosen menu = 1 dish

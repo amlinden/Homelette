@@ -36,7 +36,7 @@
     	<div class="col-md-12">   
         <div class="col-md-8">
           <p>People</p>
-          <div id="numberOfGuests">2</div>
+          <div id="numberOfGuests"></div>
           <br>
         </div>
       <div class="col-md-4">  
@@ -80,16 +80,17 @@
   </div>
 </div>
 
-<div id="thirdview" style="display: block;">
+<!--
+<div id="SelectDishScreen" style="display: block;">
   <div id="vitruta">
     <h2>Select Dish</h2>
-      <!-- search for -->
+  
     <div class="input-group">
       <input id="searchvalue" type="text" class="form-control" placeholder="Enter key words">
       <span class="input-group-btn">
         <button id="search" class="btn btn-default" type="button">Search</button>
       </span>
-        <!-- main dessert starter -->
+     
         <div class="col-xs-5">
           <select id="coursebutton" class="form-control">
             <option data-type="starter" selected="">Starter</option>
@@ -107,11 +108,48 @@
         <div id="202"><img style="width:150px;height:150px;" src="images/icecream.jpg" alt="icecream.jpg"><br>Strawberry</div></li>
     </div> 
 </div>
-			
-			
+-->
+
+<!--
+<div id="DishDetailsScreen">
+
+  <div id="imagetext"> 
+    <span id="dishImage"></span>
+    <p><span id="dishDescription"></span></p>
+    <button id="backButton" class="btn btn-default" type="button" float:right;>Back to select dish</button>
+  </div>
+
+  <div id="ingred">
+    <h2>Ingredients for <span id="numberOfGuests"></span> people</h2>
+    <p><div id="ingredients" style="display:all;"></div></p>
+      <p>SEK     <span id="totalPrice"></span>  </p></br></br>
+    <input id="confirmdish" class="btn btn-default" type="button" value="Confirm Dish">
+  </div>
+</div>
+-->
+
+<!--
+<div id ="DinnerOverviewScreen">
+  
+  <div id="goback">
+    <button id="gobackbutton" class="btn btn-default" type="button" style="float: right;" >Go back and edit dinner</button>
+    <button id="finishButton" class="btn btn-default" type="button" style="float: right;">View Preparation</button>
+  </div>
+  
+  <span id="menuView"><span>
+</div>
+-->
 
 
-    <!-- jQuery -->
+ <div id="PreparationScreen">
+    
+    <span id="prep"></span>
+    </div>
+  
+  </div>
+
+
+
   <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -121,8 +159,8 @@
 	<script src="js/model/dinnerModel.js"></script>
 	<script src="js/view/exampleView.js"></script>
 	<script src="js/view/exampleViewController.js"></script>
-  <script src="js/view/HomeScreen.js"></script>
-  <script src="js/view/LeftNavBar.js"></script>
+  <script src="js/view/homeScreen.js"></script>
+  <script src="js/view/leftNavBar.js"></script>
   <script src="js/view/SelectDishScreen.js"></script>
   <script src="js/view/DishDetailsScreen.js"></script>
   <script src="js/view/DinnerOverviewScreen.js"></script>
