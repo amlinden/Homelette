@@ -1,13 +1,9 @@
 //ExampleView Object constructor
-var ExampleView = function (container) {
+var DinnerOverviewScreen = function (container, model) {
 	
-	// Get all the relevant elements of the view (ones that show data
-  	// and/or ones that responed to interaction)
-	this.numberOfGuests = container.find("#numberOfGuests");
-	this.plusButton = container.find("#plusGuest");
-	this.minusButton = container.find("#minusGuest");
-	
-	this.numberOfGuests.html("Hello World");
+		var totalDishPrice = this.totalDishPrice = container.find("#totaldishprice");
+		var totalMenuPrice = this.totalMenuPrice = container.find("#totalmenuprice");
+		var menuView = this.menuView = container.find("#menuView");
 	
 }
  
