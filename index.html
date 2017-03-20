@@ -75,53 +75,46 @@
  	      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
  	    </div>
 	  </div>
-	</div>
-	      
-  	 
+	</div> 
+
   </div>
 </div>
 
-
-<div class="container col-md-offset-2" id="SelectDishScreen">
-    <div>
-      <h1>Select Dish</h1>
-      <form class="form-inline">
-        <input class="form-control" id="dishSearch" placeholder="Enter key words here">
-        <button class="btn btn-default">Search</button>
-        <select class="form-control col-md-offset-1">
-          <option>Starter</option>
-        <option>Main Dish</option>
-        <option>Dessert</option>
-      </select>
-    </form>
-    </div>
-    <div class="dish">
-      <img src="images\toast.jpg" style="">
-      <button class="btn btn-default">Toast</button>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="dish">
-      <img src="images\meatballs.jpg" style="">
-      <button class="btn btn-default">Meatballs</button>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="dish">
-      <img src="images\icecream.jpg" style="">
-      <button class="btn btn-default">Ice Cream</button>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+<div id="thirdview" style="display: block;">
+  <div id="vitruta">
+    <h2>Select Dish</h2>
+      <!-- search for -->
+    <div class="input-group">
+      <input id="searchvalue" type="text" class="form-control" placeholder="Enter key words">
+      <span class="input-group-btn">
+        <button id="search" class="btn btn-default" type="button">Search</button>
+      </span>
+        <!-- main dessert starter -->
+        <div class="col-xs-5">
+          <select id="coursebutton" class="form-control">
+            <option data-type="starter" selected="">Starter</option>
+            <option data-type="main dish" selected="">Main</option>
+            <option data-type="dessert" selected="">Dessert</option>
+          </select>
+        </div>
     </div>
   </div>
 
-  	</div>
+    <div id="dishesview">
+      <li id="list" style="display:inline-block;width:200px;height:200px;">
+        <div id="200"><img style="width:150px;height:150px;" src="images/icecream.jpg" alt="icecream.jpg"><br>Chocolat Ice cream</div></li><li id="list" style="display:inline-block;width:200px;height:200px;">
+        <div id="201"><img style="width:150px;height:150px;" src="images/icecream.jpg" alt="icecream.jpg"><br>Vanilla Ice cream</div></li><li id="list" style="display:inline-block;width:200px;height:200px;">
+        <div id="202"><img style="width:150px;height:150px;" src="images/icecream.jpg" alt="icecream.jpg"><br>Strawberry</div></li>
+    </div> 
 </div>
 			
 			
 
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
 	<!-- The application JavaScript code -->
 	<script src="js/app.js"></script>

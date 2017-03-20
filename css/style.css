@@ -13,8 +13,6 @@ body {
     padding: 10px;
   }
 
-
-
 #LeftNavBar {
     line-height:30px;
     opacity: 0.45;
@@ -26,3 +24,20 @@ body {
     float:left;
     padding:0%; 
     }
+
+#vitruta {
+    line-height:30px;
+    background-color:white; opacity: 0.75; 
+    color:black;
+    font-family: "Century gothic", century, sans-serif;
+    width:75%;
+    float:right;
+    padding:15px; 
+    height: 5%;   
+    }
+
+#dishesview{
+    float:left;
+    padding:15px; 
+    }
+
