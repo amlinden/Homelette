@@ -10,7 +10,7 @@ var LeftNavBar = function (container, model) {
 	
 	 //this = view (sends listener to model array)
 	function viewThis(){
-	numberofGuests.html(model.getNumberOfGuests());
+		numberofGuests.html(model.getNumberOfGuests());
 	}
 
 	this.update = function(){
@@ -23,4 +23,3 @@ var LeftNavBar = function (container, model) {
 	console.log('Updated' + model.getNumberOfGuests()); 
 
 }
- 

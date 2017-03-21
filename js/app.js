@@ -16,5 +16,6 @@ $(function() {
 
 	//controllers
 	var leftNavBarController = new LeftNavBarController(leftNavBar, model);
+	var dishDetailsController = new DishDetailsController(dishDetailsScreen, model);
 
 });
