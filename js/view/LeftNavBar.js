@@ -1,4 +1,5 @@
 //ExampleView Object constructor
+//this är left navbar objektet
 var LeftNavBar = function (container, model) {
 	
 	// Get all the relevant elements of the view (ones that show data
@@ -8,10 +9,17 @@ var LeftNavBar = function (container, model) {
 
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
+	
+	 //this = view (sends listener to model array)
+	
+	
 
+	this.update = function(){
+
+	}
 	
+	model.addObserver(this);
 	this.numberOfGuests.html(model.getNumberOfGuests());
-	
 
 }
  

@@ -11,13 +11,15 @@ var DinnerModel = function() {
  	this.notifyObserver = function(args){
  		for (var i =0; i < this._listener.length; i++){
  			this._listener[i].update(args);
+ 			
  		}
+ 		  
 	};
 
 	//TODO Lab 2 implement the data structure that will hold number of guest
 	// and selected dinner options for dinner menu
 	var selectedMenu = [];
-	var numberOfGuests = 1;
+	var numberOfGuests = 2;
 
 
 	this.setNumberOfGuests = function(num) {
@@ -26,6 +28,7 @@ var DinnerModel = function() {
 			numberOfGuests = num;
 		}
 		this.notifyObserver(); 
+		console.log('Updated' + numberOfGuests); 
 	}
 
 	// should return 
