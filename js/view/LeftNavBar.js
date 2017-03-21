@@ -1,25 +1,26 @@
-//ExampleView Object constructor
-//this är left navbar objektet
+//ExampleView Object constructor -- this är left navbar objektet
 var LeftNavBar = function (container, model) {
 	
-	// Get all the relevant elements of the view (ones that show data
-  	// and/or ones that responed to interaction)
+	// Missing: confim dinner button
 
-	var numberOfGuests = this.numberOfGuests = container.find("#numberOfGuests");
+	var numberofGuests = this.numberofGuests = container.find("#numberOfGuests");
 
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
 	
 	 //this = view (sends listener to model array)
-	
-	
+	function viewThis(){
+	numberofGuests.html(model.getNumberOfGuests());
+	}
 
 	this.update = function(){
-
+		viewThis();
 	}
-	
+
 	model.addObserver(this);
-	this.numberOfGuests.html(model.getNumberOfGuests());
+	
+	viewThis();
+	console.log('Updated' + model.getNumberOfGuests()); 
 
 }
  

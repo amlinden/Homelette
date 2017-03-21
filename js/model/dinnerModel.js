@@ -28,13 +28,14 @@ var DinnerModel = function() {
 			numberOfGuests = num;
 		}
 		this.notifyObserver(); 
-		console.log('Updated' + numberOfGuests); 
+		//console.log('Updated' + numberOfGuests); 
 	}
 
 	// should return 
 	this.getNumberOfGuests = function() {
 		//TODO Lab 2
 		return numberOfGuests;
+
 		
 	}
 
